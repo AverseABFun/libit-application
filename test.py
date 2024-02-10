@@ -10,3 +10,4 @@ assert requests.get("http://localhost:5000", params={"id": id}).json()["result"]
 assert requests.delete("http://localhost:5000", params={"id": id}).json()["result"]=="Another test note"
 assert requests.delete("http://localhost:5000", params={"id": "kjzsdjksdf"}).json()["error"]
 assert requests.get("http://localhost:5000", params={"id": id}).json()["error"]
+print("all good")
